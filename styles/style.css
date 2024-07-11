@@ -72,8 +72,23 @@ body {
 }
 
 .preparation-container ul {
-    margin: 1rem 1.2rem;
+    margin-top: 1rem;
     color: hsl(24, 5%, 28%);
+    list-style: none;
+}
+
+.preparation-container ul > li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.preparation-container ul > li::before {
+    content: "•"; /* Usar um ponto como marcador, você pode alterar para outro símbolo se preferir */
+    position: absolute;
+    left: 0;
+    color: var(--primary-color); /* Cor do marcador */
+    font-size: 1.4rem; /*Ajuste o tamanho conforme necessário*/
+    line-height: 1; /* Garante que o marcador esteja centralizado verticalmente */
 }
 
 .preparation-container li + li{
@@ -91,8 +106,23 @@ body {
 }
 
 .ingredients-container ul {
-    margin: 1rem 1.2rem;
+    margin-top: 1rem;
     color: hsl(24, 5%, 28%);
+    list-style: none;
+}
+
+.ingredients-container ul > li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.ingredients-container ul > li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    line-height: 1;
 }
 
 .ingredients-container li + li{
