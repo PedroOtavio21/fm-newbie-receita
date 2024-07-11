@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit" , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --body-color:  #f3e6d8; 
+    --white: #fff;
+}
+
+h1, h2 {
+    font-family: "Young serif", serif;
+    font-weight: 400;
+}
+
+p {
+    color: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--body-color);
+    min-height: 100vh;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.container {
+    background-color: var(--white);
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-container > img{
+    width: 100%;
+    border-radius: .9rem;
+}
+
+.description-container > h1 {
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+}
